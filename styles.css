@@ -5,9 +5,9 @@ VARIABLEN
   --hell: #f3f3f4;
   --dunkel1: #3d3d3d;
   --dunkel2: #1f1f1f;
-  --navbar: #d4dfc7;
+  --navbar: #c5d9e3;
   --textdunkel: #342a21;
-  --link: #725752;
+  --link: #1f1f1fa5;
   --link2: #96c0b7;
 }
 
@@ -75,6 +75,7 @@ a {
 a:hover {
   color: var(--link);
 }
+
 /*================================
 Navbar
 ==================================*/
@@ -144,19 +145,21 @@ Footer
   line-height: 24px;
   background-color: var(--dunkel1);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 20px 40px;
   text-align: center;
 }
-
-.quelle a {
-  color: white;
-  text-decoration: underline;
+.klasse {
+  display: flex;
+  justify-content: center;
 }
-
-.quelle a:hover {
-  color: var(--link2);
+.icon img {
+  width: 50px;
+  margin-right: 20px;
+}
+.class {
+  text-align: left;
 }
 
 @media only screen and (max-width: 650px) {
@@ -173,4 +176,23 @@ Rätsel
 
 .raetsel {
   margin: auto;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  margin: 50px 0;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
