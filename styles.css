@@ -193,10 +193,10 @@ Rätsel
 .container {
   position: relative;
   overflow: hidden;
-  margin: 50px 0;
+  margin: 50px auto;
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  height: 1000px;
+  height: 1100px;
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
