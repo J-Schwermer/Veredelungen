@@ -1,332 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-
-    <title>Weiterverarbeitung Veredelung</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/uikit-3.21.5/uikit.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navigation -->
+    <!-- Header -->
+    <header>
+      <div class="uk-cover-container">
+        <img src="/images/Koll 3_k.png" alt="..." />
+      </div>
+    </header>
 
-    <nav class="navbar" id="navigation">
-      <div>
-        <a href="index.html"><h4>Veredelungen</h4> </a>
+    <!-- Einleitung -->
+    <main>
+      <div class="textblock">
+        <h1>Auto und Umweltschutz:</h1>
+        <h2>Fluch oder Segen?</h2>
+
+        <p class="einleitung center">
+          In der heutigen Gesellschaft ist das Auto ein unverzichtbarer
+          Bestandteil unseres Alltags. Es bietet uns Freiheit, Flexibilität und
+          Unabhängigkeit. Doch die Kehrseite der Medaille ist der immense
+          Einfluss, den der motorisierte Individualverkehr auf unsere Umwelt und
+          unseren Lebenstil hat.
+        </p>
       </div>
 
-      <div class="menu-rechts">
-        <button
-          class="navbar-toggler menuicon"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+      <!-- Benziner -->
+      <div
+        class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s"
+        uk-grid
+      >
+        <div>
+          <div class="textbereich">
+            <h3>Die Schattenseite des Autos:</h3>
+            <ul class="liste">
+              <li>
+                <b>Emissionen:</b> Autos sind Hauptverursacher von
+                Treibhausgasen wie Kohlendioxid, die den Klimawandel anheizen.
+              </li>
+              <li>
+                <b>Luftverschmutzung:</b> Abgase tragen zu Feinstaub und
+                Schadstoffen in der Luft bei, die Atemwegserkrankungen und
+                andere Gesundheitsprobleme verursachen.
+              </li>
+              <li>
+                <b>Ressourcenverbrauch:</b> Die Herstellung und der Betrieb von
+                Autos verschlingen immense Mengen an Rohstoffen wie Erdöl,
+                Metallen und Gummi.
+              </li>
+              <li>
+                <b>Lärm:</b> Der Straßenverkehr ist eine der größten
+                Lärmquellen, die die Lebensqualität in Städten beeinträchtigt.
+              </li>
+              <li>
+                <b>Landverbrauch:</b> Der Bau von Straßen und Parkplätzen
+                verbraucht wertvolle Flächen, die für andere Zwecke wie
+                Landwirtschaft oder Naturräume fehlen.
+              </li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Start</a>
+        </div>
+        <div>
+          <img
+            class="bilder"
+            src="/images/Auto+Kinder.png"
+            alt="Autoverkehr mit Kindern"
+          />
+        </div>
+      </div>
+      <!-- E-Auto -->
+      <div
+        class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s"
+        uk-grid
+      >
+        <div>
+          <img
+            class="bilder"
+            src="/images/Lithium Mine.png"
+            alt="Lithium Mine Kind"
+          />
+        </div>
+        <div>
+          <div class="textbereich">
+            <h3>E-Autos: Scheinlösung oder Hoffnungsträger?</h3>
+            <p>
+              Elektroautos werden oft als umweltfreundliche Alternative zu
+              Verbrennern angepriesen. Da sie keine direkten Emissionen
+              ausstoßen, tragen sie nicht zur lokalen Luftverschmutzung bei.
+              <br />
+              <b>Aber:</b>
+            </p>
+            <ul class="liste">
+              <li>
+                <b>Die Herstellung von E-Autos ist energieintensiv</b> und kann
+                Umweltbelastungen verursachen, insbesondere wenn der Strom aus
+                fossilen Brennstoffen gewonnen wird.
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="lackierungen.html">Lackierungen</a>
+              <li>
+                <b>Die Entsorgung von Batterien</b> stellt ein großes Problem
+                dar, da giftige Stoffe den Boden und das Wasser verunreinigen
+                können.
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="folierung.html">Folierung</a>
+              <li>
+                <b>Die Reichweite von E-Autos ist begrenzt,</b> was die
+                Alltagstauglichkeit einschränkt.
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="laminierung.html">Laminierung</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="praegung.html">Prägung</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="kaschierung.html">Kaschierung</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#beflockung">Beflockung</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#perforierung"
-                  >Perforierung</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#vergolden">Vergolden</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#stanzen">Stanzen</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="raetsel.html">Rätsel </a>
+              <li>
+                <b>Der Preis von E-Autos ist noch deutlich höher</b> als der von
+                vergleichbaren Benzinern oder Dieselfahrzeugen.
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </nav>
 
-    <!-- Content -->
-    <main>
-      <div class="landing">
-        <h1>Veredelungstechniken</h1>
+      <!-- Wasserstoff -->
+      <div
+        class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s"
+        uk-grid
+      >
+        <div>
+          <div class="textbereich">
+            <h3>Wasserstoff: Zukunftstechnologie oder Trugbild?</h3>
+            <p>
+              Wasserstoff gilt als potenzieller Energieträger der Zukunft, der
+              auch im Verkehrssektor eingesetzt werden könnte <br />
+              <b>Doch:</b>
+            </p>
+            <ul class="liste">
+              <li>
+                <b>Die Herstellung von Wasserstoff</b> ist energieintensiv und
+                erfordert oft fossile Brennstoffe.
+              </li>
+
+              <li>
+                <b
+                  >Die Infrastruktur für Wasserstoffautos ist noch in den
+                  Anfängen</b
+                >
+                und muss flächendeckend ausgebaut werden.
+              </li>
+              <li>
+                <b>Wasserstoffautos sind sehr teuer</b> in Anschaffung und
+                Unterhalt.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <img
+            class="bilder"
+            src="/images/Wasserstoffbus Münster.png"
+            alt="Wasseratoffbus in Münster"
+          />
+        </div>
       </div>
-
-      <div class="d-flex auflistung">
-        <a class="cardhover" href="lackierungen.html"
-          ><div class="card cardstart">
-            <img
-              src="images/lack/Rubbellack-fin.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Lackierungen</h5>
-              <p class="card-text">
-                Die Lackierung ist eine Weiterverarbeitungstechnik, bei der eine
-                transparente oder farbige Beschichtung auf Druckerzeugnisse
-                aufgetragen wird, um deren Oberflächen zu veredeln und zu
-                schützen.
-              </p>
-            </div>
-          </div></a
-        >
-
-        <a class="cardhover" href="folierung.html"
-          ><div class="card cardstart">
-            <img
-              src="images/folierung/Cellophanierung-fin.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Folierungen</h5>
-              <div class="card-text">
-                <p>
-                  Die Folierung ist eine Weiterverarbeitungstechnik, bei der
-                  eine dünne Kunststofffolie auf Druckerzeugnisse aufgebracht
-                  wird, um deren Oberfläche zu schützen und ihnen eine spezielle
-                  Optik oder Haptik zu verleihen.
-                </p>
-              </div>
-            </div>
-          </div></a
-        >
-
-        <a class="cardhover" href="laminierung.html">
-          <div class="card cardstart">
-            <img
-              src="images/Laminieren-fin.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Laminierung</h5>
-              <p class="card-text">
-                Die Laminierung ist eine Weiterverarbeitungstechnik, bei der
-                Druckerzeugnisse durch das Aufbringen einer klaren
-                Kunststofffolie geschützt und verstärkt werden, wodurch sie
-                widerstandsfähiger gegen Abnutzung, Feuchtigkeit und
-                Verschmutzung werden.
-              </p>
-            </div>
-          </div></a
-        >
-
-        <a class="cardhover" href="praegung.html"
-          ><div class="card cardstart">
-            <img
-              src="images/prägung/letterpress-fin.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Prägung</h5>
-              <p class="card-text">
-                Prägungen können nicht nur für einen allgemein haptischen und
-                optischen Effekt verwendet werden, sondern können auch einen
-                aktiven nutzen haben, wie zum Beispiel bei der Blindenschrift.
-              </p>
-            </div>
-          </div></a
-        >
-
-        <a class="cardhover" href="kaschierung.html"
-          ><div class="card cardstart">
-            <img
-              src="images/Kaschieren-fin.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Kaschierung</h5>
-              <p class="card-text">
-                Die Kaschierung ist eine Weiterverarbeitungstechnik, bei der ein
-                bedrucktes Material durch das Aufbringen einer zusätzlichen
-                Schicht (oft aus Papier oder Kunststoff) verstärkt und veredelt
-                wird, um die Haltbarkeit, Stabilität und Optik zu verbessern.
-              </p>
-            </div>
-          </div></a
-        >
-
-        <div id="beflockung" class="card cardstart">
-          <img
-            src="images/Beflockung-Papier-fin.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Beflockung</h5>
-            <div class="card-text">
-              <p>
-                Bei der Beflockung sind viele feine Fasern auf einem
-                folienartigen Untergrund zusammen-gehäuft, wodurch sie eine
-                weiche Oberfläche bilden, die nur wenige Millimeter dick ist.
-              </p>
-              <h6>Inline oder Offline?:</h6>
-              <p>Offline</p>
-              Mögliche Materialien:
-              <p>Papier und Textilien</p>
-              <p>
-                Partziel oder Vollflächig Partiell aber auch Vollflächig möglich
-                Auf Textilien nur Partiell möglich
-              </p>
-            </div>
-          </div>
+      <!-- Schluss -->
+      <div class="schluss">
+        <!-- Umdenken -->
+        <div class="umdenken">
+          <h2>Umdenken ist gefragt:</h2>
+          <p>
+            Unabhängig von der Antriebstechnologie ist es wichtig, unseren
+            Autokonsum zu hinterfragen.
+            <b>Müssen wir wirklich für jede kurze Strecke ins Auto steigen?</b>
+            Könnten wir nicht stattdessen
+            <b
+              >zu Fuß gehen, Fahrrad fahren oder öffentliche Verkehrsmittel
+              nutzen?</b
+            ><br />
+            Fahrverbote auf Inseln wie Norderney zeigen, dass es möglich ist,
+            auf Autos zu verzichten, ohne dabei auf Mobilität einzubüßen.
+          </p>
         </div>
 
-        <div id="perforierung" class="card cardstart">
-          <img
-            src="images/perforierung-fin.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Perforierung</h5>
-            <div class="card-text">
-              <h6>Inline / Offline / Druckverfahren:</h6>
-              <p>
-                Die Perforationen werden durch eine Perforationsmaschine in das
-                Material gebracht. Eben diese Maschine die mit auf Stahlhülsen
-                wirkenden Stahlstempeln die zu zu perforierenden Bereiche scharf
-                und präzise ausschlägt, erschafft gezahnte Linien, ohne dabei
-                Teile aus dem Material zu entfernen
-              </p>
-              <h6>Auch möglich auf (Material):</h6>
-              <p>
-                Perforationen sind nur möglich, wenn das zu perforierende
-                Material keine zu hohe Grammatur aufweist
-              </p>
-              <h6>Nutzen:</h6>
-              <p>
-                Perforationen können bei Flyern, Broschüren, Coupons,
-                Gutscheine, Bestell- / Anmeldeformulare oder Karten angewandt
-                werden, aber sie eignen sich prinzipiell für alle Drucksachen,
-                bei denen später wichtige Informationen unabhängig vom gesamten
-                Produkt noch einmal von diesem abgelöst werden können
-              </p>
-              <h6>Kleine Beschreibung:</h6>
-              <p>
-                Beim Perforieren stanzt man gewissermaßen Schlitze oder Löcher
-                aus, an denen später ein Teil des Papiers leicht abgetrennt
-                werden kann – besonders nützlich, wenn wichtige Informationen
-                oder Kompaktdaten auch losgelöst vom Dokument nutzbar sein
-                sollen
-              </p>
-            </div>
-          </div>
+        <!-- Fazit -->
+        <div class="fazit">
+          <h4>Fazit:</h4>
+          <p>
+            Die Frage, ob das Auto Fluch oder Segen für die Umwelt ist, lässt
+            sich nicht einfach beantworten.
+            <b
+              >Es gibt sowohl positive als auch negative Aspekte, die es
+              abzuwägen gilt.</b
+            >
+            Fakt ist jedoch, dass wir unser Mobilitätsverhalten ändern müssen,
+            um die Umweltbelastungen durch den Verkehr zu reduzieren.
+            <b
+              >Jeder Einzelne kann dazu beitragen, indem er bewusster auf sein
+              Auto verzichtet und alternative Fortbewegungsmöglichkeiten nutzt. </b
+            ><br />
+          </p>
         </div>
-
-        <div id="vergolden" class="card cardstart">
-          <img src="images/vergolden-fin.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Vergolden</h5>
-            <p class="card-text">
-              Es wird eine dünne Schicht Gold auf die Oberfläche aufgetragen.
-              Dabei gibt es mehrere Verfahren, wie die Blattvergoldung, die
-              Sprühvergoldung usw. Druckverfahren: nach dem Druck Nutzen:
-              Textilien, Papier, Banner, Verpackungen ... (Wird meistens nur für
-              die Ästhetik gewählt)
-            </p>
-          </div>
+        <hr class="linie" />
+        <div class="denkanstoesse">
+          <h4>Denkanstöße:</h4>
+          <ul>
+            <li>
+              In welchen Situationen könnte ich auf mein Auto verzichten und
+              stattdessen umweltfreundlichere Alternativen nutzen?
+            </li>
+            <li>
+              Welche Möglichkeiten gibt es in meiner Region, um umweltfreundlich
+              mobil zu sein (z.B. Carsharing, ÖPNV)?
+            </li>
+            <li>
+              Wie kann die Politik dazu beitragen, die Verkehrswende
+              voranzutreiben (z.B. Förderung von E-Mobilität, Ausbau des ÖPNV)?
+            </li>
+          </ul>
         </div>
-
-        <div id="stanzen" class="card cardstart">
-          <img src="images/stanzen-fin.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Stanzen</h5>
-            <p class="card-text">
-              Es ist ein mechanisches Verfahren, bei dem Papier, Karton, Metall
-              und Kunststoff in bestimmte Formen geschnitten oder geformt
-              werden. Ermöglicht das teilweise oder vollständige Heraustrennen
-              von Konturen. Fast jede erdenkliche Form ist möglich, um Mappen,
-              Karten oder Verpackungen herzustellen. Druckverfahren: meistens
-              nach dem Druck
-            </p>
-          </div>
-        </div>
-
-        <a class="cardhover" href="raetsel.html">
-          <div class="card cardstart">
-            <img
-              src="images/popcorn.png"
-              class="card-img-top popcorn"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Rätsel</h5>
-              <p class="card-text">
-                Bist du bereit dein Wissen zu testen? Dann probiere das
-                Kreuzworträtsel zum Thema zu lösen.<br />
-                Viel Glück!
-              </p>
-            </div>
-          </div></a
-        >
+        <hr class="linie" />
+        <h5>
+          Diskutiere diese Fragen mit deinen Freunden und deiner Familie!
+          <br />
+          Gemeinsam können wir etwas für unsere Umwelt tun!
+        </h5>
       </div>
     </main>
 
-    <!-- Footer -->
-    <footer>
-      <div id="footer">
-        <div class="klasse">
-          <div class="icon">
-            <img src="Images/popcorn.png" alt="" />
-          </div>
-          <div class="class">
-            GDU-1 <br />
-            Frau Loh
-          </div>
-        </div>
-
-        <div class="namen">
-          Mareike Schriever, Carolin Boldering, <br />
-          Ann-Kristin Jobst, Jan Schwermer
-        </div>
-      </div>
-    </footer>
-
-    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/uikit-3.21.5/uikit.js"></script>
+    <script src="/uikit-3.21.5/uikit-icons.js"></script>
   </body>
 </html>
